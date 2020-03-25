@@ -1,0 +1,54 @@
+@import './styles/variables';
+@import './styles/utilities';
+// Quick reset Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0.75rem 0;
+}
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f8fa;
+  font-size: 0.875rem;
+}
+
+// Navbar
+#navbar {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+  position: sticky;
+  .container {
+    display: flex;
+    align-items: center;
+    .logo {
+      flex: 1;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 1.5rem;
+      line-height: 1.75;
+      color: $primary-color;
+    }
+    .nav-items ul {
+      display: flex;
+      padding: 0.75rem;
+      li {
+        margin: 0 1rem;
+        color: $dark-color;
+        align-self: center;
+      }
+    }
+  }
+}
