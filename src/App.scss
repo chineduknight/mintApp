@@ -52,3 +52,142 @@ body {
     }
   }
 }
+
+#side {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  text-align: right;
+  & > div > span {
+    font-size: 0.625rem;
+  }
+  img {
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+  }
+}
+
+// main content
+#main {
+  display: flex;
+  aside {
+    background: #fff;
+    height: 100vh;
+
+    a {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: $green-color;
+      border-radius: 30px;
+      margin-bottom: 1rem;
+      color: white;
+      font-family: Roboto;
+      font-size: 0.75rem;
+    }
+
+    .list {
+      font-size: 11px;
+      font-weight: normal !important;
+      color: #647787;
+
+      h3 {
+        font-weight: normal;
+      }
+      img {
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      ul li {
+        padding: 0.5rem 1rem;
+        // padding: 0.25rem;
+        display: flex;
+        &:hover {
+          background: #e8f1fd;
+          border-left: 4px solid $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.main-content {
+  padding: 1rem 1rem 1rem 2rem;
+  // display: flex;
+}
+
+.card {
+  background-color: #fff;
+  display: flex;
+  font-size: 0.75rem;
+  color: #787c90;
+  margin-left: 0.7rem;
+  flex: 1;
+  img {
+    width: 3rem;
+    margin-left: 0.5rem;
+  }
+  ul li:last-child {
+    color: #262626;
+    font-size: 1.125rem;
+  }
+}
+
+// Table style
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+  .text {
+    background-color: $dark-color;
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+  }
+  .last {
+    border: 1px solid #cccfd4;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: $green-color;
+    padding: 0.4rem 0rem;
+    cursor: pointer;
+    span {
+      background-color: $green-color;
+      border-radius: 50%;
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      margin: 0 0.7rem;
+    }
+  }
+  tr {
+    background-color: #fff;
+  }
+}
+
+#customers td,
+th {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+  color: #7f8fa4;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #eaeef0;
+  color: #7f8fa4;
+  font-weight: normal;
+}
+
+table td:first-child {
+  color: #414042 !important;
+}
