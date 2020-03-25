@@ -72,11 +72,10 @@ body {
   display: flex;
   aside {
     background: #fff;
-    height: 100vh;
 
     a {
       display: inline-block;
-      padding: 0.8rem 2rem;
+      padding: 0.5rem 1.7rem;
       background: $green-color;
       border-radius: 30px;
       margin-bottom: 1rem;
@@ -190,4 +189,31 @@ th {
 
 table td:first-child {
   color: #414042 !important;
+}
+
+// showcase
+#showcase {
+  display: grid;
+  grid-template-columns: 2fr 1.3fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  .graph {
+    background-color: white;
+    height: 329px;
+    // width: 100px;
+    // height: 100px;
+  }
+
+  .big-card {
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    ul li {
+      margin: 0.5rem 0;
+    }
+  }
+}
+.line {
+  width: 300px;
+  border-bottom: 3px solid $green-color;
+  position: absolute;
 }
