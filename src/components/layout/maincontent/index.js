@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-// import Table from './Table';
+import Table from './Table';
 import { CARD_ITEMS } from '../../constants';
 const MainSection = () => {
   return (
@@ -10,6 +10,7 @@ const MainSection = () => {
           return <Card items={item} />;
         })}
       </div>
+      <Table />
     </div>
   );
 };
