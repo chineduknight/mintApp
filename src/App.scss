@@ -202,8 +202,6 @@ table {
   .graph {
     background-color: white;
     height: 329px;
-    // width: 100px;
-    // height: 100px;
   }
 
   .big-card {
@@ -212,6 +210,18 @@ table {
     ul li {
       margin: 0.5rem 0;
     }
+  }
+}
+.count {
+  font-weight: bold;
+  &-primary {
+    color: $primary-color;
+  }
+  &-secondary {
+    color: $secondary-color;
+  }
+  &-green {
+    color: $green-color;
   }
 }
 .line {
