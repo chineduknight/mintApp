@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './Card';
 import Table from './Table';
 import BigCard from './BigCard';
+import Payment from './Payment';
 import { CARD_ITEMS } from '../../constants';
 import Chart from '../../Chart';
 const MainSection = () => {
@@ -21,6 +22,7 @@ const MainSection = () => {
           <BigCard />
         </div>
       </div>
+      <Payment />
       <Table />
     </div>
   );

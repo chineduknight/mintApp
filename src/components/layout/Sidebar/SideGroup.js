@@ -1,11 +1,11 @@
 import React from 'react';
 const SideGroup = ({ items }) => {
   return (
-    <div class='list'>
+    <div className='list'>
       <ul>
         {items.map((item, index) => {
           return (
-            <li>
+            <li key={item.label}>
               {index === 0 ? (
                 <span></span>
               ) : (

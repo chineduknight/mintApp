@@ -32,6 +32,9 @@ body {
   .container {
     display: flex;
     align-items: center;
+    img {
+      padding-top: 0.6rem;
+    }
     .logo {
       flex: 1;
       font-family: Roboto;
@@ -43,7 +46,6 @@ body {
     }
     .nav-items ul {
       display: flex;
-      padding: 0.75rem;
       li {
         margin: 0 1rem;
         color: $dark-color;
@@ -112,7 +114,7 @@ body {
 
 .main-content {
   padding: 1rem 1rem 1rem 2rem;
-  // display: flex;
+  flex: 1;
 }
 
 .card {
@@ -120,8 +122,9 @@ body {
   display: flex;
   font-size: 0.75rem;
   color: #787c90;
-  margin-left: 0.7rem;
+  margin-right: 0.7rem;
   flex: 1;
+  justify-content: space-between;
   img {
     width: 3rem;
     margin-left: 0.5rem;
@@ -196,7 +199,7 @@ table td:first-child {
   display: grid;
   grid-template-columns: 2fr 1.3fr;
   gap: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   .graph {
     background-color: white;
     height: 329px;
@@ -213,7 +216,90 @@ table td:first-child {
   }
 }
 .line {
-  width: 300px;
-  border-bottom: 3px solid $green-color;
+  height: 0.625rem;
+  background-color: $secondary-color;
+  border-radius: 15px;
+  margin-top: 0.6rem;
+  // border-top-right-radius: 70%;
+  div:first-child {
+    background-color: $green-color;
+    // border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 70%;
+    height: 0.625rem;
+  }
+}
+
+.payment {
+  h1 {
+    font-weight: normal;
+    font-size: 2.25rem;
+  }
+}
+.payment-area {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+// Drowdown
+.dropbtn {
+  padding: 0.7rem 0.3rem;
+  text-align: left;
+  width: 9.375rem;
+  border: 1px solid #ced0da;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
   position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+// Searchbar
+.search-container {
+  border-bottom: 0.5px solid #787878;
+  input[type='text'] {
+    padding: 6px;
+    margin-top: 11px;
+    font-size: 11px;
+    border: none;
+    background-color: #f7f8fa;
+  }
+
+  button {
+    float: left;
+    padding: 6px 0 10px;
+    margin-top: 8px;
+    background-color: #f7f8fa;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
 }

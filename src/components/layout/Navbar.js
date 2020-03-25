@@ -3,9 +3,9 @@ import React from 'react';
 const Navbar = () => {
   return (
     <nav id='navbar'>
-      <div class='container'>
-        <div class='logo'>TrasMonitor</div>
-        <div class='nav-items'>
+      <div className='container'>
+        <div className='logo'>TrasMonitor</div>
+        <div className='nav-items'>
           <ul>
             <li>Support</li>
             <li>FAQ</li>

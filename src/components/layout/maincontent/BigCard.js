@@ -5,7 +5,10 @@ const BigCard = () => {
     <Fragment>
       <div className='big-card p-1'>
         <h4>Orders</h4>
-        <div className='line'></div>
+        <div className='line'>
+          <div></div>
+          <div></div>
+        </div>
         <ul>
           <li>
             Pending Orders: <span className='count count-secondary'>20</span>
