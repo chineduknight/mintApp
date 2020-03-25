@@ -9,20 +9,16 @@ const Payment = () => {
         <div className='search-container'>
           <form>
             <button type='submit'>
-              <img
-                src={require('../../../img/search.svg')}
-                alt='SearchBar'
-                srcset=''
-              />
+              <img src={require('../../../img/search.svg')} alt='SearchBar' />
             </button>
             <input type='text' placeholder='Search..' name='search' />
           </form>
         </div>
         <div>
           Show
-          <div class='dropdown'>
-            <button class='dropbtn'>All</button>
-            <div class='dropdown-content'>
+          <div className='dropdown'>
+            <button className='dropbtn'>All</button>
+            <div className='dropdown-content'>
               <a>All</a>
               <a>Reconcilled</a>
               <a>Un-reconcilled</a>

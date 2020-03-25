@@ -136,7 +136,7 @@ body {
 }
 
 // Table style
-#customers {
+table {
   border-collapse: collapse;
   width: 100%;
   .text {
@@ -146,7 +146,7 @@ body {
     border-radius: 50%;
     margin-right: 0.5rem;
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75rem;
     display: inline-block;
   }
   .last {
@@ -168,30 +168,29 @@ body {
   tr {
     background-color: #fff;
   }
-}
+  td,
+  th {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    color: #7f8fa4;
+  }
 
-#customers td,
-th {
-  border-bottom: 1px solid #ddd;
-  padding: 1rem;
-  color: #7f8fa4;
-}
+  tr:hover {
+    background-color: #ddd;
+  }
 
-#customers tr:hover {
-  background-color: #ddd;
-}
+  th {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: left;
+    background-color: #eaeef0;
+    color: #7f8fa4;
+    font-weight: normal;
+  }
 
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #eaeef0;
-  color: #7f8fa4;
-  font-weight: normal;
-}
-
-table td:first-child {
-  color: #414042 !important;
+  td:first-child {
+    color: #414042 !important;
+  }
 }
 
 // showcase
@@ -216,18 +215,16 @@ table td:first-child {
   }
 }
 .line {
-  height: 0.625rem;
+  height: 0.3rem;
   background-color: $secondary-color;
-  border-radius: 15px;
+  border-radius: 3.125rem;
   margin-top: 0.6rem;
-  // border-top-right-radius: 70%;
   div:first-child {
     background-color: $green-color;
-    // border-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 3.125rem;
+    border-bottom-left-radius: 3.125rem;
     width: 70%;
-    height: 0.625rem;
+    height: 0.3rem;
   }
 }
 
@@ -265,17 +262,15 @@ table td:first-child {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+  a {
+    color: black;
+    padding: 0.75rem 16px;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
 }
 
 .dropdown:hover .dropdown-content {
@@ -291,6 +286,9 @@ table td:first-child {
     font-size: 11px;
     border: none;
     background-color: #f7f8fa;
+    &:focus {
+      border: none;
+    }
   }
 
   button {
